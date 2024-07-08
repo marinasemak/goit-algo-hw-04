@@ -1,6 +1,7 @@
 from pathlib import Path
 
-# calculate total salary from file with users salary 
+
+# calculate total salary from file with users salary
 def total_salary(path: Path) -> tuple:
     total = 0
     count = 0
@@ -18,6 +19,7 @@ def total_salary(path: Path) -> tuple:
         return 0, 0
     average = total // count if count > 0 else 0
     return total, average
+
 
 # create a file with users salary
 with open("salary.txt", "w") as fh:
